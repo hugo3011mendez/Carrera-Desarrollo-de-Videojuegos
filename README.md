@@ -4,3 +4,11 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 
 ## 12/04/2021
 * Añadidos apuntes y resumen de los vídeos de presentación e introducción a Construct.
+
+
+## 13/04/2021
+* Añadido resumen del vídeo sobre la interfaz de Construct.
+* Añadido archivo de proyecto de Construct con las acciones realizadas en el vídeo sobre la interfaz de Construct.
+
+* Añadido resumen del vídeo sobre la lógica de Construct.
+* Añadido archivo de proyecto de Construct con las acciones realizadas en el vídeo sobre la lógica de Construct.
