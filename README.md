@@ -31,3 +31,14 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Actualizado archivo del proyecto con las acciones realizadas en el vídeo :
 	* Añadida variable de instancia al enemigo, para comprobar se debe perseguir al jugador.
 	* Añadidos eventos para comprobar si el enemigo debe perseguir al jugador, y cuando el enemigo esté persiguiendo y se tope con un muro lo salte.
+
+
+### 19/04/2021
+* Añadido resumen del vídeo "Añadiendo Disparos" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en el vídeo :
+	* Se ha creado un nuevo sprite que representará una bala.
+	* Se han creado grupos de eventos para una mejor organización de la hoja de eventos.
+	* Se han creado eventos de gestión de la bala, como :
+		* Un evento que hace que se cree una bala cuando se pulse el botón Intro.
+		* Un evento que hace que se destruya la bala cuando su posición esté fuera de la escena.
+	* Añadido vídeo mostrando el progreso actual en el proyecto de Construct.
