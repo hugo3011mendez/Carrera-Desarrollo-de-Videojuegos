@@ -62,3 +62,14 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Añadido sprite con dibujo de una bandera para que se gane la partida cuando el jugador llegue a ella.
 	* Añadidos eventos pertinentes para cuando se pierde y se gana.
 	* Añadidas barreras en los límites de la escena para que los sprites no se caigan.
+
+
+### 21/04/2021
+* Añadido resumen del vídeo "Introducción al Game Feel" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Creado Sprite para hacer de cámara.
+	* Añadido comportamiento ScrollTo a la cámara.
+	* Añadido grupo de eventos en la hoja de eventos para controlar los eventos de la cámara :
+		* Añadido evento que controla la posición de la cámara según la posición del jugador.
+	* Añadidas variables globales estáticas para establecer la distancia entre la cámara y el jugador, y la velocidad de la cámara.
+	* Ajustada la cámara para que no se viera cambiando su ajuste "Visible inicialmente".
