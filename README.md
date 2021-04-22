@@ -73,3 +73,17 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Añadido evento que controla la posición de la cámara según la posición del jugador.
 	* Añadidas variables globales estáticas para establecer la distancia entre la cámara y el jugador, y la velocidad de la cámara.
 	* Ajustada la cámara para que no se viera cambiando su ajuste "Visible inicialmente".
+
+
+### 22/04/2021
+* Añadido resumen del vídeo "Aplicando Efectos del Juego" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Incorporado efecto shake en la cámara al disparar balas.
+	* Añadida aleatoriedad de la desviación del ángulo de las balas.
+	* Optimizado evento que gestiona la destrucción de las instancias de las balas.
+
+* Añadido resumen del vídeo "Añadiendo Assets de arte Finales" del proyecto.
+* Descargado un pack de Assets de https://kenney.nl/assets/platformer-pack-redux.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Establecidas imágenes de los diferentes sprites con sus animaciones y fotogramas.
+	* Actualizados eventos para establecer la animación correspondiente al jugador dependiendo de su movimiento.
