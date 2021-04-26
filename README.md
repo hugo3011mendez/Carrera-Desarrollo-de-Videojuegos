@@ -87,3 +87,23 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
 	* Establecidas imágenes de los diferentes sprites con sus animaciones y fotogramas.
 	* Actualizados eventos para establecer la animación correspondiente al jugador dependiendo de su movimiento.
+
+
+### 26/04/2021
+* Optimizada hoja de eventos para una visualización óptima de las animaciones del personaje y de los enemigos.
+
+* Añadido resumen del vídeo "Añadiendo Audio" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Importados en el proyecto archivos de audio necesarios en una nueva carpeta donde están almacenados.
+	* Añadidos eventos que reproducirán música al iniciarse la escena y un efecto de sonido cuando el jugador o los enemigos salten.
+
+* Optimizada visualización de la puntuación, moviendo el texto de posición a medida que se mueve el jugador.
+* Optimizado evento de inicio de partida para que sea visible el mensaje del fin de partida.
+* Optimizado evento de fin de partida, optimizando la posición del mensaje del fin de partida.
+
+* Añadido resumen del vídeo "Creando Más Niveles" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Duplicada escena actual para seguir con la misma configuración.
+	* Diseñado entorno del nuevo nivel.
+	* Añadida variable global indicando el nivel en el que debe estar el jugador para poder cambiar de niveles de una manera más sencilla.
+	* Optimizado evento de fin de partida para cambiar al nivel correspondiente.
