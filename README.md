@@ -107,3 +107,25 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Diseñado entorno del nuevo nivel.
 	* Añadida variable global indicando el nivel en el que debe estar el jugador para poder cambiar de niveles de una manera más sencilla.
 	* Optimizado evento de fin de partida para cambiar al nivel correspondiente.
+
+
+### 27/04/2021
+* Añadido resumen del vídeo "Añadiendo Progresión Entre Niveles" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Creada nueva escena, con un fondo fijo y un texto en el medio.
+	* Creada nueva hoja de eventos para la última escena, controlando el texto al inicio de la escena y el reinicio del juego.
+
+* Optimizados tamaños de las escenas.
+
+* Añadido resumen del vídeo "Creando Un Menú" del proyecto.
+* Actualizado archivo del proyecto con las acciones realizadas en dicho vídeo :
+	* Creada nueva escena con todos los elementos necesarios para usarse de menú.
+	* Gestionada nueva hoja de eventos para el menú.
+	* Actualizada hoja de eventos del último nivel, para volver al menú una vez se haya acabado y se pulse el espacio.
+	* Creada nueva variable global para llevar la cuenta de todos los enemigos destruidos por el jugador.
+	* Usada variable global en el mensaje de victoria al final del juego.
+
+* Añadido resumen del vídeo "Compilar y Publicar el Juego" del proyecto.
+* Exportado proyecto en HTML5 comprimido y añadido al repositorio.
+
+#### Terminado Curso de Construct
