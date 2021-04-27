@@ -128,4 +128,7 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadido resumen del vídeo "Compilar y Publicar el Juego" del proyecto.
 * Exportado proyecto en HTML5 comprimido y añadido al repositorio.
 
+* Añadido PDF de apuntes de la parte 4 del curso.
+* Realizado el examen del curso con éxito y conseguido el diploma.
+
 #### Terminado Curso de Construct
