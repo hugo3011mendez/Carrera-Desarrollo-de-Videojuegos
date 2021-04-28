@@ -140,6 +140,7 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadidos apuntes de la primera parte del curso, Introducción.
 * Añadido resumen de la primera parte del curso, Introducción.
 * Actualizado Node.js para trabajar en este curso.
+
 * Añadidos apuntes de Node.js y TypeScript de la segunda parte del curso, Entorno de Desarrollo.
 * Configurado Visual Code para trabajar con TypeScript.
 * Creado un proyecto para el juego con su estructura de carpetas.
@@ -148,3 +149,13 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadida carpeta con los archivos del profesor.
 * Añadidos apuntes de la segunda parte del curso, Entorno de Desarrollo.
 * Añadido resumen de la segunda parte del curso, Entorno de Desarrollo.
+
+* Añadidos apuntes y resumen del primer vídeo de la tercera parte del curso, Creación de nuestra plantilla inicial.
+	* Creada versión 10 y añadida allí la plantilla de Phaser.
+	* Añadido plugin livereload a la plantilla de Phaser.
+	* Modificada versión 10 para limpiar caché.
+
+* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Estructura del Código en Phaser.
+	* Aprendida estructura del código en una clase Phaser.Scene.
+	* Eliminados archivos innecesarios de la plantilla.
+	* Modificado archivo de Phaser.Scene para eliminar y limpiar componentes innecesarios.
