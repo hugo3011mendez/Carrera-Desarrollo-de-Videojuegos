@@ -132,3 +132,12 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Realizado el examen del curso con éxito y conseguido el diploma.
 
 #### Terminado Curso de Construct
+
+
+### 28/04/2021
+#### Comenzado Curso de Desarrollo de Videojuegos Básicos con Phaser
+
+* Añadidos apuntes de la primera parte del curso, Introducción.
+* Añadido resumen de la primera parte del curso, Introducción.
+* Actualizado Node.js para trabajar en este curso.
+* Añadidos apuntes de Node.js y TypeScript de la segunda parte del curso, Entorno de Desarrollo.
