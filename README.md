@@ -159,3 +159,11 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Aprendida estructura del código en una clase Phaser.Scene.
 	* Eliminados archivos innecesarios de la plantilla.
 	* Modificado archivo de Phaser.Scene para eliminar y limpiar componentes innecesarios.
+
+
+### 29/04/2021
+* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Importar y Exportar Módulos.
+	* Creada nueva carpeta copia de version10 llamada version11.
+	* Estructurada version11 aplicando modularidad añadiendo una carpeta en 'src' para añadir las escenas allí y creando un archivo TS de configuración.
+	* Modificados archivos de configuración, juego y escena del nivel 1 correctamente.
+	* Añadidos imports y exports necesarios en los diferentes archivos.
