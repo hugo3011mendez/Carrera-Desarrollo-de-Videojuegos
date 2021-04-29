@@ -167,3 +167,14 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Estructurada version11 aplicando modularidad añadiendo una carpeta en 'src' para añadir las escenas allí y creando un archivo TS de configuración.
 	* Modificados archivos de configuración, juego y escena del nivel 1 correctamente.
 	* Añadidos imports y exports necesarios en los diferentes archivos.
+
+* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Escena carga de Assets.
+	* Renombrada version11 a version12 para seguir avanzando en el proyecto.
+	* Modificado game.ts para exportar un objeto Juego en vez de Phaser.Game.
+	* Creado nuevo archivo referente a escena de carga tipo Phaser.Scene.
+		* Creados dos objetos representando dos barras, de carga y de progreso.
+		* Creo un método llamado 'creaBarras' para definir la barra de carga e inicializar la barra de progreso.
+		* En el preload() establezco el color de fondo de la escena.
+		* En el preload creo un listener para realizar la acción de relleno de la barra de carga con la barra de progreso.
+		* En el preload creo un listener para cargar la 1a escena del juego, nivel1, cuando la barra de progreso haya completado.
+		* Cargo el logo de Phaser 1000 veces para que se muestre en la escena nivel1 una vez cargue.
