@@ -178,3 +178,18 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* En el preload creo un listener para realizar la acción de relleno de la barra de carga con la barra de progreso.
 		* En el preload creo un listener para cargar la 1a escena del juego, nivel1, cuando la barra de progreso haya completado.
 		* Cargo el logo de Phaser 1000 veces para que se muestre en la escena nivel1 una vez cargue.
+
+
+### 30/04/2021
+* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Escena Menú y Flujo entre Escenas.
+	* Renombrada version12 a version13 para seguir avanzando en el proyecto.
+	* Limpiada carpeta 'dist' para ahorrar espacio y eliminar archivos innecesarios.
+	* Creado nuevo archivo de escena llamado ‘menu.ts’.
+		* Muestro el mismo logo que en la escena de Nivel 1.
+		* Creo dos variables privadas para controlar el ancho y alto de la escena.
+		* En el init() establezco los valores de width y height.
+		* Creo un objeto tipo Texto de Phaser.
+		* Creo un método para cuando se toque el texto de Phaser se cambie a la escena indicada según parámetros.
+	* En el archivo de configuración importo la escena Menú y la añado al array de escenas que deben cargarse en 2a posición.
+	* En la escena de carga establezco que la escena que debe cargarse una vez se haya realizado la carga de assets sea la escena Menú en vez del Nivel 1.
+	* En la escena del Nivel 1 establezco las mismas variables de ancho y alto, el mismo init y el mismo objeto de texto que en la escena Menú, solo que el texto mostrará 'NIVEL 1'.
