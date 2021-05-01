@@ -193,3 +193,20 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* En el archivo de configuración importo la escena Menú y la añado al array de escenas que deben cargarse en 2a posición.
 	* En la escena de carga establezco que la escena que debe cargarse una vez se haya realizado la carga de assets sea la escena Menú en vez del Nivel 1.
 	* En la escena del Nivel 1 establezco las mismas variables de ancho y alto, el mismo init y el mismo objeto de texto que en la escena Menú, solo que el texto mostrará 'NIVEL 1'.
+
+
+### 1/05/2021
+* Añadidos comentarios en todos los lugares convenientes del proyecto.
+* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Escena HUD, Intercambio de datos y eventos.
+	* Renombrada version13 a version14 para seguir avanzando en el proyecto.
+	* Creado nuevo archivo de escena de Phaser llamado 'hud.ts'.
+		* Creo una variable de tipo texto de Phaser para mostrar las vidas.
+		* Le doy un valor inicial al texto desde el create().
+		* Creo una variable en el create() que se refiere a la escena Nivel 1.
+		* Recojo los eventos que lanza Nivel 1 para ejecutar una función donde reduzco el número de vidas.
+	* En la escena Nivel 1 :
+		* Creo una variable tipo Number para llevar la cuenta de las vidas.
+		* En el create() creo un objeto tipo texto de Phaser y lo establezco interactivo para cuando se pulse, se reduzca el número de vidas y se emita un evento, el evento que recogerá la escena HUD.
+
+* Realizado reto, donde realizo el mismo proceso para la puntuación, donde al pulsar en el texto de puntuación ésta se aumenta en 1.
+	* En el reto he hecho uso de la función Phaser.Utils.String.Pad() para añadir ceros.
