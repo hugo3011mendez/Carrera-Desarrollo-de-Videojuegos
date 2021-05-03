@@ -150,25 +150,25 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadidos apuntes de la segunda parte del curso, Entorno de Desarrollo.
 * Añadido resumen de la segunda parte del curso, Entorno de Desarrollo.
 
-* Añadidos apuntes y resumen del primer vídeo de la tercera parte del curso, Creación de nuestra plantilla inicial.
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Creación de nuestra plantilla inicial.
 	* Creada versión 10 y añadida allí la plantilla de Phaser.
 	* Añadido plugin livereload a la plantilla de Phaser.
 	* Modificada versión 10 para limpiar caché.
 
-* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Estructura del Código en Phaser.
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Estructura del Código en Phaser.
 	* Aprendida estructura del código en una clase Phaser.Scene.
 	* Eliminados archivos innecesarios de la plantilla.
 	* Modificado archivo de Phaser.Scene para eliminar y limpiar componentes innecesarios.
 
 
 ### 29/04/2021
-* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Importar y Exportar Módulos.
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Importar y Exportar Módulos.
 	* Creada nueva carpeta copia de version10 llamada version11.
 	* Estructurada version11 aplicando modularidad añadiendo una carpeta en 'src' para añadir las escenas allí y creando un archivo TS de configuración.
 	* Modificados archivos de configuración, juego y escena del nivel 1 correctamente.
 	* Añadidos imports y exports necesarios en los diferentes archivos.
 
-* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Escena carga de Assets.
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Escena carga de Assets.
 	* Renombrada version11 a version12 para seguir avanzando en el proyecto.
 	* Modificado game.ts para exportar un objeto Juego en vez de Phaser.Game.
 	* Creado nuevo archivo referente a escena de carga tipo Phaser.Scene.
@@ -181,7 +181,7 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 
 
 ### 30/04/2021
-* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Escena Menú y Flujo entre Escenas.
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Escena Menú y Flujo entre Escenas.
 	* Renombrada version12 a version13 para seguir avanzando en el proyecto.
 	* Limpiada carpeta 'dist' para ahorrar espacio y eliminar archivos innecesarios.
 	* Creado nuevo archivo de escena llamado ‘menu.ts’.
@@ -197,7 +197,7 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 
 ### 1/05/2021
 * Añadidos comentarios en todos los lugares convenientes del proyecto.
-* Añadidos apuntes y resumen del segundo vídeo de la tercera parte del curso, Escena HUD, Intercambio de datos y eventos.
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Escena HUD, Intercambio de datos y eventos.
 	* Renombrada version13 a version14 para seguir avanzando en el proyecto.
 	* Creado nuevo archivo de escena de Phaser llamado 'hud.ts'.
 		* Creo una variable de tipo texto de Phaser para mostrar las vidas.
@@ -210,3 +210,15 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 
 * Realizado reto, donde realizo el mismo proceso para la puntuación, donde al pulsar en el texto de puntuación ésta se aumenta en 1.
 	* En el reto he hecho uso de la función Phaser.Utils.String.Pad() para añadir ceros.
+
+
+### 3/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Centralizar Identificadores.
+	* Renombrada version14 a version16 para seguir avanzando en el proyecto.
+	* Creado nuevo archivo TS dedicado a almacenar constantes del proyecto.
+	* Rellenado archivo de constantes con las constantes referentes a eventos.
+	* Importado archivo de constantes e integradas todas las constantes en los lugares que les corresponden.
+
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Free Assets.
+	* Descargados paquetes de Assets en nueva carpeta creada de Assets dentro de la carpeta Juego.
+
