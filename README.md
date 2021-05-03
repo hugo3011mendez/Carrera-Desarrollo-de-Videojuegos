@@ -222,3 +222,6 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadidos apuntes y resumen del siguiente vídeo del curso, Free Assets.
 	* Descargados paquetes de Assets en nueva carpeta creada de Assets dentro de la carpeta Juego.
 
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Creación de TileMaps con Tiled.
+	* Creada nueva carpeta en assets para el tileset y los niveles del juego.
+	* Creado tilemap con el tileset de terrenos usando Tiled.
