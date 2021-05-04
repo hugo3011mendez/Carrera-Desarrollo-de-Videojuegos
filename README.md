@@ -225,3 +225,17 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadidos apuntes y resumen del siguiente vídeo del curso, Creación de TileMaps con Tiled.
 	* Creada nueva carpeta en assets para el tileset y los niveles del juego.
 	* Creado tilemap con el tileset de terrenos usando Tiled.
+
+
+### 4/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo del curso, TileMaps y TileSets desde Tiled.
+	* Definidos nombres de los elementos de Tiled en el archivo de Constantes.
+	* En el archivo de carga :
+		* Aplicadas constantes correspondientes en el archivo de carga.
+		* Cargado mapa y tileset desde el archivo de carga con sus nombres referidos usando constantes.
+	* En el archivo referente al Nivel 1 :
+		* Creadas y definidas variables privadas para los elementos de Tiled.
+		* Mostrados elementos de Tiled en create() con sus respectivos datos usando constantes.
+
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Fondo en Moivimiento.
+	* 

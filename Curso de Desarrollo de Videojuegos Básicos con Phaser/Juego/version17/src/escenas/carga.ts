@@ -8,7 +8,7 @@ export default class Carga extends Phaser.Scene
 
     // Constructor llamando a su padre con el título de la escena
     constructor () {
-        super('Carga');
+        super(Constante.ESCENAS.CARGA);
     }
 
     /**
@@ -52,7 +52,7 @@ export default class Carga extends Phaser.Scene
         );
 
 
-        //Listener cuando se hayan cargado todos los Assets  
+        // Listener cuando se hayan cargado todos los Assets  
         this.load.on(
             'complete',
             function () {
@@ -62,8 +62,12 @@ export default class Carga extends Phaser.Scene
         );
 
 
-        //Carga los assets del juego
-        //Para pruebas cargar 1000 veces la misma imagen con diferentes keys
-        for (let i=1;i<=1000;i++) this.load.image('logo' + i, 'assets/phaser3-logo.png');      
+        // Carga los assets del juego
+        // Para pruebas cargar 1000 veces la misma imagen con diferentes keys
+        this.load.image('logo1', 'assets/phaser3-logo.png');
+         
+        // TiledMaps y TileSets     
+        this.load.tilemapTiledJSON(Constante.MAPAS.NIVEL1.TILEDMAP, 'assets/niveles/nivel1.json');
+        this.load.image(Constante.MAPAS.TILESET, 'assets/niveles/tileset.png');
     }
 }

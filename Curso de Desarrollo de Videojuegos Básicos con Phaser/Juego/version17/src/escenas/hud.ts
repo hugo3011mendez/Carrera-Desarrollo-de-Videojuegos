@@ -21,7 +21,7 @@ export default class HUD extends Phaser.Scene{
         nivel1.events.on(Constante.EVENTOS.VIDAS, this.actualizaVidas, this);
         nivel1.events.on(Constante.EVENTOS.PUNTUACION, this.actualizaPuntuacion, this);
 
-        this.VidasTxt = this.add.text(20, 20, Constante.HUD.VIDAS + ' : 3', {fontSize:'32px', color:'#ffffff'});
+        this.VidasTxt = this.add.text(20, 20, Constante.HUD.VIDAS + ' 3', {fontSize:'32px', color:'#ffffff'});
 
         this.PuntuacionTxt = this.add.text(this.cameras.main.width - 100, 20, '0', {fontSize:'32px', color:'#ffffff'});
     }

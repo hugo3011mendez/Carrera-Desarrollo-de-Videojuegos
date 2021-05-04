@@ -9,6 +9,10 @@ export default class Nivel1 extends Phaser.Scene
     private vidas: number; // Para el número de vidas del personaje
     private puntuacion: number; // Para el Nº de puntuación
 
+    private mapaNivel: Phaser.Tilemaps.Tilemap;
+    private conjuntoPatrones: Phaser.Tilemaps.Tileset;
+    private capaTerreno: Phaser.Tilemaps.TilemapLayer;
+
     constructor ()
     {
         super(Constante.ESCENAS.NIVEL1);
@@ -48,5 +52,10 @@ export default class Nivel1 extends Phaser.Scene
             this.registry.set(Constante.REGISTRO.PUNTUACION, this.puntuacion);
             this.events.emit(Constante.EVENTOS.PUNTUACION);
         });
+        
+        // Cargo el TileMap, TileSet y capa del Nivel
+        this.mapaNivel = this.make.tilemap({key: Constante.MAPAS.NIVEL1.TILEDMAP, tileWidth: 16, tileHeight: 16}); // Con palabra clave y dimensiones de celda
+        this.conjuntoPatrones = this.mapaNivel.addTilesetImage(Constante.MAPAS.TILESET); // Con nombre para el Tileset
+        this.capaTerreno = this.mapaNivel.createLayer(Constante.MAPAS.NIVEL1.CAPAPLATAFORMAS, this.conjuntoPatrones); // Con el nombre de la capa y el tileset
     }
 }
