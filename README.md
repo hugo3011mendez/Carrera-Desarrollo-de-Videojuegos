@@ -238,4 +238,11 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Mostrados elementos de Tiled en create() con sus respectivos datos usando constantes.
 
 * Añadidos apuntes y resumen del siguiente vídeo del curso, Fondo en Moivimiento.
-	* 
+	* Renombrada version17 a version18 para seguir avanzando en el proyecto.
+	* Actualizado archivo de constantes.
+	* Cargada imagen de fondo en la escena de carga.
+	* Realizadas acciones en el archivo referente al Nivel 1 :
+		* Creada variable de tipo TileSprite para el fondo.
+		* Muestro el fondo en pantalla indicándole sus propiedades en la función create().
+		* Creo la función update() y ahí especifico el movimiento del mismo.
+		* En la función update() controlo la vuelta a la escena Menú cuando las vidas llegan a 0.
