@@ -246,3 +246,10 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Muestro el fondo en pantalla indicándole sus propiedades en la función create().
 		* Creo la función update() y ahí especifico el movimiento del mismo.
 		* En la función update() controlo la vuelta a la escena Menú cuando las vidas llegan a 0.
+
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Fuentes Bitmap.
+	* Renombrada version18 a version19 para seguir avanzando en el proyecto.
+	* Usada fuente proporcionada por el profesor del curso para trabajar en el proyecto.
+	* Modifico el archivo de carga para la carga de la fuente.
+	* Añado un campo al archivo de configuración para una mejor renderización del PixelArt.
+	* Cambiado texto de las constantes que se muestran por pantalla para su visualización con el nuevo font.
