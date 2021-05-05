@@ -33,6 +33,10 @@ const Constante = {
         JSON:'fuenteJSON',
         IMAGEN:'imagenFuente',
         BITMAP:'fuentePixel'
+    },
+    JUGADOR:{
+        ID:'jugadorAtlas',
+        
     }
 }
 

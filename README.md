@@ -253,3 +253,12 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Modifico el archivo de carga para la carga de la fuente.
 	* Añado un campo al archivo de configuración para una mejor renderización del PixelArt.
 	* Cambiado texto de las constantes que se muestran por pantalla para su visualización con el nuevo font.
+
+
+### 5/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Atlas de Imágenes.
+	* Renombrada version19 a version20 para seguir avanzando en el proyecto.
+	* Creado un Atlas de imágenes del personaje con un programa TexturePacker.
+	* Añadido Atlas al proyecto.
+	* Añadida nueva constante para el jugador.
+	* Añadida carga del Atlas en la escena de carga.
