@@ -14,6 +14,9 @@ export default class Nivel1 extends Phaser.Scene
     private capaTerreno: Phaser.Tilemaps.TilemapLayer;
     private imagenFondo: Phaser.GameObjects.TileSprite;
 
+    private jugador: Phaser.Physics.Arcade.Sprite; // Sprite del jugador    
+
+
     constructor ()
     {
         super(Constante.ESCENAS.NIVEL1);
@@ -58,12 +61,26 @@ export default class Nivel1 extends Phaser.Scene
         this.mapaNivel = this.make.tilemap({key: Constante.MAPAS.NIVEL1.TILEDMAP, tileWidth: 16, tileHeight: 16}); // Con palabra clave y dimensiones de celda
         this.conjuntoPatrones = this.mapaNivel.addTilesetImage(Constante.MAPAS.TILESET); // Con nombre para el Tileset
         this.capaTerreno = this.mapaNivel.createLayer(Constante.MAPAS.NIVEL1.CAPAPLATAFORMAS, this.conjuntoPatrones); // Con el nombre de la capa y el tileset
+        this.capaTerreno.setCollisionByExclusion([-1]); // Indico que la capa sea colisionable
 
         // Fondo
         // Añado el TileSprite en la posición (0,0) con el ancho y el alto de la escena y su nombre
         // Con setOrigin establezco que su localización esté en el (0,0)
         // Con setDepth establezco la capa donde va a aparecer
         this.imagenFondo = this.add.tileSprite(0,0, this.mapaNivel.widthInPixels, this.mapaNivel.heightInPixels, Constante.FONDOS.NIVEL1).setOrigin(0,0).setDepth(-1);
+
+        // Animaciones
+        this.anims.create({ // Para crear una animación :
+            key: Constante.JUGADOR.ANIMACION.ESPERA, // Nombre o clave de la animación
+            // Indico las imágenes de la animación pasando la clave del jugador, el nombre común de la animación, el Nº total de frames, los FPS y el modo de repetición (bucle) 
+            frames: this.anims.generateFrameNames(Constante.JUGADOR.ID, {prefix: Constante.JUGADOR.ANIMACION.ESPERA + '-', end: 11}), frameRate: 20, repeat: -1
+        });
+
+        // Crear jugador
+        this.jugador = this.physics.add.sprite(200, 80, Constante.JUGADOR.ID).play(Constante.JUGADOR.ANIMACION.ESPERA);
+
+        // Colliders
+        this.physics.add.collider(this.jugador, this.capaTerreno);
     }
 
 

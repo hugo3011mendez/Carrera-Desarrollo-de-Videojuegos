@@ -63,24 +63,26 @@ export default class Carga extends Phaser.Scene
             this
         );
 
+        // Simplifico el path de carga para no escribir siempre assets/
+        this.load.path = 'assets/';
 
         // Carga los assets del juego
         // Para pruebas cargar 1000 veces la misma imagen con diferentes keys
-        this.load.image('logo1', 'assets/phaser3-logo.png');
+        this.load.image('logo1', 'phaser3-logo.png');
          
         // TiledMaps y TileSets     
-        this.load.tilemapTiledJSON(Constante.MAPAS.NIVEL1.TILEDMAP, 'assets/niveles/nivel1.json');
-        this.load.image(Constante.MAPAS.TILESET, 'assets/niveles/tileset.png');
+        this.load.tilemapTiledJSON(Constante.MAPAS.NIVEL1.TILEDMAP, 'niveles/nivel1.json');
+        this.load.image(Constante.MAPAS.TILESET, 'niveles/tileset.png');
 
         // Fondo
-        this.load.image(Constante.FONDOS.NIVEL1, 'assets/imagenes/fondos/' + Constante.FONDOS.NIVEL1 + '.png');
+        this.load.image(Constante.FONDOS.NIVEL1, 'imagenes/fondos/' + Constante.FONDOS.NIVEL1 + '.png');
 
         //Fuentes                
-        this.load.json(Constante.FUENTES.JSON, 'assets/fuentes/fuente.json');
-        this.load.image(Constante.FUENTES.IMAGEN, 'assets/fuentes/imagenFuente.png');
+        this.load.json(Constante.FUENTES.JSON, 'fuentes/fuente.json');
+        this.load.image(Constante.FUENTES.IMAGEN, 'fuentes/imagenFuente.png');
 
         // Jugador
         // Cargo la spritesheet del jugador indicando su nombre, su imagen y su JSON
-        this.load.atlas(Constante.JUGADOR.ID, 'assets/imagenes/jugador/ninjafrog.png', 'assets/imagenes/jugador/ninjafrog.json');
+        this.load.atlas(Constante.JUGADOR.ID, 'imagenes/jugador/ninjafrog.png', 'imagenes/jugador/ninjafrog.json');
     }
 }

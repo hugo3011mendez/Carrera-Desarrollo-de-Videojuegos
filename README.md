@@ -262,3 +262,13 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Añadido Atlas al proyecto.
 	* Añadida nueva constante para el jugador.
 	* Añadida carga del Atlas en la escena de carga.
+
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Animaciones, Físicas y Colisiones.
+	* Simplificado path de carga en la escena de carga.
+	* Actualizado archivo de constantes con las nuevas constantes de las animaciones.
+	* En la escena del Nivel 1 :
+		* Creo una variable para el jugador.
+		* Creo la animación correspondiente a Idle.
+		* Especifico que la capa del TiledMap sea colisionable.
+		* Añado el collider de la capa.
+	* En el archivo de configuración añado otro objeto para las físicas y sus propiedades.

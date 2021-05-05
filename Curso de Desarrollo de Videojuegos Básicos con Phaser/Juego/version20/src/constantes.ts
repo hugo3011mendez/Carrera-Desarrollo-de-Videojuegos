@@ -36,7 +36,11 @@ const Constante = {
     },
     JUGADOR:{
         ID:'jugadorAtlas',
-        
+        ANIMACION:{
+            ESPERA: 'idle',
+            CORRER: 'run',
+            SALTO: 'jump-0'
+        }
     }
 }
 
