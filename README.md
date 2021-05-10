@@ -280,3 +280,10 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Añadidas variables referentes a los controles de movimiento del jugador.
 		* Añadida definición de la animación de correr del jugador.
 		* Controlada gestión de movimientos para aplicarle velocidad y animación al jugador según el control usado.
+
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Clase de Gestión del Jugador.
+	* Renombrada version20 a version21 para seguir avanzando en el proyecto.
+	* Creada nueva clase de TypeScript para controlar todo lo referente al jugador.
+		* Constructor y variables creadas con lo que ya estaba hecho en el nivel 1.
+		* Creada función update() con las acciones hechas en el nivel 1.
+	* Adaptada clase de la escena del Nivel 1 a la nueva clase referente al jugador.
