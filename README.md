@@ -272,3 +272,11 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Especifico que la capa del TiledMap sea colisionable.
 		* Añado el collider de la capa.
 	* En el archivo de configuración añado otro objeto para las físicas y sus propiedades.
+
+
+### 10/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo del curso, Control de Movimientos.
+	* En la escena del Nivel 1 :
+		* Añadidas variables referentes a los controles de movimiento del jugador.
+		* Añadida definición de la animación de correr del jugador.
+		* Controlada gestión de movimientos para aplicarle velocidad y animación al jugador según el control usado.

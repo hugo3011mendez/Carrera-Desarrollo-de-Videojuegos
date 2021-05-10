@@ -14,7 +14,13 @@ export default class Nivel1 extends Phaser.Scene
     private capaTerreno: Phaser.Tilemaps.TilemapLayer;
     private imagenFondo: Phaser.GameObjects.TileSprite;
 
-    private jugador: Phaser.Physics.Arcade.Sprite; // Sprite del jugador    
+    private jugador: Phaser.Physics.Arcade.Sprite; // Sprite del jugador
+    
+    
+    // Control de entrada
+    private cursores: Phaser.Types.Input.Keyboard.CursorKeys; // Teclas de cursor
+    private teclasWASD: any; // Comodín de TypeScript para poder ser de cualquier tipo
+    private teclaEspacio: Phaser.Input.Keyboard.Key; // Tecla de Phaser
 
 
     constructor ()
@@ -76,11 +82,26 @@ export default class Nivel1 extends Phaser.Scene
             frames: this.anims.generateFrameNames(Constante.JUGADOR.ID, {prefix: Constante.JUGADOR.ANIMACION.ESPERA + '-', end: 11}), frameRate: 20, repeat: -1
         });
 
+        this.anims.create({ // Animación de correr
+            key: Constante.JUGADOR.ANIMACION.CORRER, // Nombre o clave de la animación
+            // Indico las imágenes de la animación pasando la clave del jugador, el nombre común de la animación, el Nº total de frames, los FPS y el modo de repetición (bucle) 
+            frames: this.anims.generateFrameNames(Constante.JUGADOR.ID, {prefix: Constante.JUGADOR.ANIMACION.CORRER + '-', end: 11}), frameRate: 20, repeat: -1
+        });
+
+
         // Crear jugador
-        this.jugador = this.physics.add.sprite(200, 80, Constante.JUGADOR.ID).play(Constante.JUGADOR.ANIMACION.ESPERA);
+        this.jugador = this.physics.add.sprite(200, 80, Constante.JUGADOR.ID).play(Constante.JUGADOR.ANIMACION.ESPERA, true);
+        this.jugador.body.setSize(20,30);
+
 
         // Colliders
         this.physics.add.collider(this.jugador, this.capaTerreno);
+
+
+        // Control de entrada
+        this.cursores = this.input.keyboard.createCursorKeys();
+        this.teclasWASD = this.input.keyboard.addKeys('W,A,S,D');
+        this.teclaEspacio = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
     }
 
 
@@ -94,5 +115,31 @@ export default class Nivel1 extends Phaser.Scene
             this.scene.stop(Constante.ESCENAS.HUD);
             this.scene.start(Constante.ESCENAS.MENU);
         }
+
+        // Control de movimiento :
+        // Si se está especificando la dirección del movimiento horizontal...
+        if(((this.teclasWASD.A.isDown || this.cursores.left.isDown) || (this.teclasWASD.D.isDown || this.cursores.right.isDown))){
+            this.jugador.anims.play(Constante.JUGADOR.ANIMACION.CORRER, true); // Establezco su animación
+
+            if(this.teclasWASD.A.isDown || this.cursores.left.isDown){ // Izquierda
+                this.jugador.setVelocityX(-200);
+                this.jugador.flipX = true;
+            }
+            else if(this.teclasWASD.D.isDown || this.cursores.right.isDown){ // Derecha
+                this.jugador.setVelocityX(200);
+                this.jugador.flipX = false;
+            }
+        } // Si se pulsa la tecla correspondiente al salto y el jugador está en el suelo
+        else if((this.teclaEspacio.isDown || this.teclasWASD.W.isDown || this.cursores.up.isDown) && this.jugador.body.blocked.down){ 
+            this.jugador.setVelocityY(-300);
+            this.jugador.anims.stop(); // Cancelo las animaciones que se están mostrando
+            this.jugador.setTexture(Constante.JUGADOR.ID, Constante.JUGADOR.ANIMACION.SALTO); // Le doy la textura de salto
+        }
+        else{ // Si no se está especificando dirección del movimiento horizontal
+            this.jugador.setVelocityX(0);
+            this.jugador.flipX = false;
+            this.jugador.anims.play(Constante.JUGADOR.ANIMACION.ESPERA, true);        
+        }
+
     }
 }
