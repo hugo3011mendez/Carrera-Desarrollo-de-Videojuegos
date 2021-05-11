@@ -24,7 +24,8 @@ const Constante = {
             TILEDMAP:'nivel1',
             CAPAPLATAFORMAS:'Plataforma'
         },
-        TILESET:'nivelestileset'
+        TILESET:'nivelestileset',
+        POSICIONFINAL:'posicionfinal'
     },
     FONDOS:{
         NIVEL1:'Brown'
@@ -35,12 +36,15 @@ const Constante = {
         BITMAP:'fuentePixel'
     },
     JUGADOR:{
-        ID:'jugadorAtlas',
+        ID:'jugador',
         ANIMACION:{
             ESPERA: 'idle',
             CORRER: 'run',
             SALTO: 'jump-0'
         }
+    },
+    OBJETOS:{
+        FINAL:'final'
     }
 }
 

@@ -287,3 +287,17 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Constructor y variables creadas con lo que ya estaba hecho en el nivel 1.
 		* Creada función update() con las acciones hechas en el nivel 1.
 	* Adaptada clase de la escena del Nivel 1 a la nueva clase referente al jugador.
+
+
+### 11/05/2021
+* Añadidos apuntes y resumen del último vídeo del curso, Posición del Jugador y Objeto Final.
+	* Creados objetos puntos en el TiledMap del nivel 1 para la posición final del jugador y la posición del objeto final. 
+	* Creada nueva carpeta dentro de 'imagenes' para añadir ahí la imagen del objeto final.
+	* Actualizado archivo de constantes con los nuevos valores correspondientes.
+	* Cargo el objeto final en la escena de carga con sus valores correspondientes.
+	* Defino el objeto final en la escena de nivel 1, indicando todos sus valores para su posición, tamaño, etc..
+	* Establezco el collider del objeto final para que se vuelva al menú cuando se toque.
+	* Eliminado el texto interactivo con la variable vidas en el nivel 1.
+	* Cambiada definición del jugador en el nivel 1 para colocarlo en la posición inicial creada en el TiledMap.
+
+## Terminado Curso de Desarrollo de Videojuegos Básicos con Phaser

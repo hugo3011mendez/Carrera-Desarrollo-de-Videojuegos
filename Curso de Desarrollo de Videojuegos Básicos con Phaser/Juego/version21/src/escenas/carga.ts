@@ -84,5 +84,8 @@ export default class Carga extends Phaser.Scene
         // Jugador
         // Cargo la spritesheet del jugador indicando su nombre, su imagen y su JSON
         this.load.atlas(Constante.JUGADOR.ID, 'imagenes/jugador/ninjafrog.png', 'imagenes/jugador/ninjafrog.json');
+
+        // Carga del Objeto Final
+        this.load.image(Constante.OBJETOS.FINAL, 'imagenes/objetos/final.png');
     }
 }
