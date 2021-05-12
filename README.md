@@ -301,3 +301,19 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Cambiada definición del jugador en el nivel 1 para colocarlo en la posición inicial creada en el TiledMap.
 
 ## Terminado Curso de Desarrollo de Videojuegos Básicos con Phaser
+
+
+### 12/05/2021
+## Empezado Curso de Desarrollo Avanzado de Videojuegos con Phaser
+* Añadidos apuntes y resumen del primer vídeo del curso, Presentación.
+
+* Añadidos apuntes y resumen del siguiente vídeo, Contador de Tiempo.
+	* Renombrada version20 a version21 para seguir avanzando en el proyecto.
+	* Actualizado archivo de constantes con los nuevos valores correspondientes.
+	* Acciones realizadas en Nivel 1 :
+		* Creadas e inicializadas nuevas variables para el contador de tiempo.
+		* Añadido parámetro time a la función update().
+		* Realizada gestión del contador en update() llamando a su evento y usando el registro.
+		* Quitado el logo de Phaser para mejor visión de la interfaz HUD.
+	* Creadas variables para el control del tiempo en HUD.
+	* Texto del tiempo posicionado y gestionado mediante constantes y registro.
