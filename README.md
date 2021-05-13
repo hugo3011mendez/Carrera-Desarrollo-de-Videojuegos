@@ -308,7 +308,7 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadidos apuntes y resumen del primer vídeo del curso, Presentación.
 
 * Añadidos apuntes y resumen del siguiente vídeo, Contador de Tiempo.
-	* Renombrada version20 a version21 para seguir avanzando en el proyecto.
+	* Renombrada version21 a version22 para seguir avanzando en el proyecto.
 	* Actualizado archivo de constantes con los nuevos valores correspondientes.
 	* Acciones realizadas en Nivel 1 :
 		* Creadas e inicializadas nuevas variables para el contador de tiempo.
@@ -317,3 +317,23 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Quitado el logo de Phaser para mejor visión de la interfaz HUD.
 	* Creadas variables para el control del tiempo en HUD.
 	* Texto del tiempo posicionado y gestionado mediante constantes y registro.
+
+
+### 13/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Carga y Animaciones.
+	* Renombrada version22 a version23 para seguir avanzando en el proyecto.
+	* Creada carpeta de imágenes para los enemigos.
+	* Actualizado TileMap en Tiled para poner más cosas en la escena y spawn points de los enemigos.
+	* Actualizado archivo de constantes con los nuevos valores correspondientes.
+	* Actualizada escena de carga con la carga de los diferentes spritesheets de los enemigos.
+	* Creada nueva clase llamada Enemigos, para gestionar el grupo de spritesheets con físicas de los enemigos.
+		* Creo su constructor con varios parámetros.
+			* Llamo a super, actualizo las variables privadas y añado sus objetos.
+			* Añado las físicas y creo las animaciones.
+			* Uso map() para darles capacidad de movimiento.
+		* Creo otra función para controlar la dirección y velocidad de su movimiento.
+	* En Nivel 1 : 
+		* Pongo a pública su variable referente al mapa para poder usarla en el constructor de los enemigos.
+		* Importo la clase de enemigos.
+		* Creo una variable correspondiente al grupo de enemigos.
+		* Defino la variable de los enemigos en el create y la actualizo en update().
