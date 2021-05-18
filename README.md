@@ -337,3 +337,10 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Importo la clase de enemigos.
 		* Creo una variable correspondiente al grupo de enemigos.
 		* Defino la variable de los enemigos en el create y la actualizo en update().
+
+
+### 18/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Colisiones con Enemigos.
+	* Renombrada version23 a version24 para seguir avanzando en el proyecto.
+	* Descargados assets para la explosión.
+	*  
