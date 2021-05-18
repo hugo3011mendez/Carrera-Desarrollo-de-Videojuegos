@@ -328,6 +328,7 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Actualizada escena de carga con la carga de los diferentes spritesheets de los enemigos.
 	* Creada nueva clase llamada Enemigos, para gestionar el grupo de spritesheets con físicas de los enemigos.
 		* Creo su constructor con varios parámetros.
+
 			* Llamo a super, actualizo las variables privadas y añado sus objetos.
 			* Añado las físicas y creo las animaciones.
 			* Uso map() para darles capacidad de movimiento.
@@ -343,4 +344,15 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 * Añadidos apuntes y resumen del siguiente vídeo, Colisiones con Enemigos.
 	* Renombrada version23 a version24 para seguir avanzando en el proyecto.
 	* Descargados assets para la explosión.
-	*  
+	* Actualizado archivo de constantes con los nuevos valores correspondientes.
+	* Cargada imagen de explosión en la escena de carga.
+	* Añadido collider entre enemigos y jugador indicando overlap, en la escena del NIvel 1.
+	* En la clase del Jugador :
+		* Creada nueva propiedad booleana referente al tiempo de espera para colisiones.
+		* Creada función para realizar las acciones correspondientes cuando el enemigo toca al jugador y cuando el jugador derrota al enemigo.
+		* Importada la clase del Nivel 1 para establecer las variables de vidas y puntuación.
+
+* Añadidos apuntes y resumen del siguiente vídeo, Añadir más Enemigos.
+	* Modificado Nivel 1 en Tiled para añadir nuevos puntos de aparición de otro tipo de enemigos.
+	* Añadido nuevo tipo de enemigo radish con todos los cambios pertinentes.
+	* Añadido parámetro al constructor de Enemigo para establecer las dimensiones y offsets al definir el objeto.
