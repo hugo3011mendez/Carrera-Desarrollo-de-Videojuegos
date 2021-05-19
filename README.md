@@ -356,3 +356,19 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 	* Modificado Nivel 1 en Tiled para añadir nuevos puntos de aparición de otro tipo de enemigos.
 	* Añadido nuevo tipo de enemigo radish con todos los cambios pertinentes.
 	* Añadido parámetro al constructor de Enemigo para establecer las dimensiones y offsets al definir el objeto.
+
+
+### 19/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Plataformas en movimiento.
+	* Reemplazado el mapa creado en Tiled por el del profesor para un mejor seguimiento del curso.
+	* Actualizado archivo de constantes con los nuevos valores correspondientes.
+	* Cargo los assets necesarios en la escena de carga.
+	* Creo una nueva clase para las plataformas móviles
+		* Creo sus variables referentes a sus propiedades.
+		* Hago su constructor donde establezco variables y gestiono sus propiedades con el mapa.
+		* Hago su update() indicando sus propiedades correspondientes para actualizar.
+	* En la escena del Nivel 1 :
+		* Importo la nueva clase.
+		* Creo dos variables para las plataformas en los dos ejes.
+		* Las defino en el create().
+		* Llamo a su update() en el update() del nivel.
