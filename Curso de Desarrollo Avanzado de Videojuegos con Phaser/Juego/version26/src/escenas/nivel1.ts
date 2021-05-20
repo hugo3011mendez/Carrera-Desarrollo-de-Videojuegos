@@ -57,19 +57,6 @@ export default class Nivel1 extends Phaser.Scene
 
     create ()
     {
-        //const logo = this.add.image(420, 70, 'logo1');
-
-        const jugarTxt: Phaser.GameObjects.Text = this.add.text(50, this.height / 2, 'NIVEL 1', {fontSize:'32px', color:'#ffffff'});
-
-        const puntuacionTxt: Phaser.GameObjects.Text = this.add.text(this.width / 4, this.height / 1.5, 'PUNTUACION +', {fontSize:'32px', color:'#ffffff'}).setInteractive();
-
-        puntuacionTxt.on('pointerdown', ()=>{ // Cuando pulsemos sobre el texto...
-            this.puntuacion ++;
-            this.registry.set(Constante.REGISTRO.PUNTUACION, this.puntuacion);
-            this.events.emit(Constante.EVENTOS.PUNTUACION);
-        });
-        
-
         // Cargo el TileMap
         this.mapaNivel = this.make.tilemap({key: Constante.MAPAS.NIVEL1.TILEDMAP, tileWidth: 16, tileHeight: 16}); // Con palabra clave y dimensiones de celda
         this.physics.world.bounds.setTo(0,0,this.mapaNivel.widthInPixels,this.mapaNivel.heightInPixels); // Defino los bordes de la escena, la zona por la que se puede interactuar
@@ -122,7 +109,7 @@ export default class Nivel1 extends Phaser.Scene
 
 
         // Objeto final 
-        // Lo defino a partir del objetoc creado en el TileMap
+        // Lo defino a partir del objeto creado en el TileMap
         let objetofinal: any = this.mapaNivel.createFromObjects(Constante.MAPAS.POSICIONFINAL, {name: Constante.MAPAS.POSICIONFINAL})[0];               
         this.physics.world.enable(objetofinal); // Lo activo
         objetofinal.body.setAllowGravity(false); // Le doy gravedad 0 para que sea fijo
@@ -132,13 +119,7 @@ export default class Nivel1 extends Phaser.Scene
         
 
         // Collider del objeto final
-        this.physics.add.collider(this.jugador, objetofinal, () => {            
-            // Paro las escenas de Nivel 1 y HUD
-            this.scene.stop(Constante.ESCENAS.NIVEL1);
-            this.scene.stop(Constante.ESCENAS.HUD);
-            // Vuelvo al Menú Principal
-            this.scene.start(Constante.ESCENAS.MENU);
-        });
+        this.physics.add.collider(this.jugador, objetofinal, this.volverAMenu); // Ahora cuando colisionen llamo a volverAMenu
 
 
         // Enemigos 
@@ -164,13 +145,6 @@ export default class Nivel1 extends Phaser.Scene
         // Muevo el fondo
         this.imagenFondo.tilePositionY -= 0.4;
         
-        // Controlar las vidas restantes :
-        if (parseInt(this.registry.get(Constante.REGISTRO.VIDAS)) === 0) {
-            this.scene.stop(Constante.ESCENAS.NIVEL1);
-            this.scene.stop(Constante.ESCENAS.HUD);
-            this.scene.start(Constante.ESCENAS.MENU);
-        }
-
         this.jugador.update(); // Lanzo el update del jugador para que se actualice junto con el nivel
 
         // Actualizo el comportamiento de los enemigos
@@ -199,11 +173,23 @@ export default class Nivel1 extends Phaser.Scene
             // Cuando el tiempo termine, GAME OVER
             if(this.tiempoRestante == 0){
                 this.tiempoAgotado = true;
-                this.scene.stop(Constante.ESCENAS.NIVEL1);
-                this.scene.stop(Constante.ESCENAS.HUD);
-                this.scene.start(Constante.ESCENAS.MENU);
             }
-        }
 
+            // Cuando se hayan acabado las vidas o el tiempo, vuelvo al menú
+            if (this.vidas == 0 || this.tiempoAgotado) this.volverAMenu(); // Ahora llamo a la función en vez de cambiar directamente de escenas
+        }
+    }
+
+    /**
+     * Efecto de la cámara al volver a la escena del menú
+     */
+    private volverAMenu(): void{
+        this.cameras.main.fade(700,0,0,0); // Fade-Out de cámaras
+        this.cameras.main.on('camerafadeoutcomplete', () =>{ // Cuando acabe el Fade-Out 
+            //this.sound.stopAll();
+            this.scene.stop(Constante.ESCENAS.NIVEL1); // Paro la escena
+            this.scene.stop(Constante.ESCENAS.HUD); // Paro la escena
+            this.scene.start(Constante.ESCENAS.MENU); // Inicio la escena
+        })
     }
 }

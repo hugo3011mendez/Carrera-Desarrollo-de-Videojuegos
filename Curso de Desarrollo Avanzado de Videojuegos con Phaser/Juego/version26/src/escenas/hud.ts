@@ -1,9 +1,9 @@
 import Constante from '../constantes';
 
 export default class HUD extends Phaser.Scene{
-    private VidasTxt: Phaser.GameObjects.Text;
-    private PuntuacionTxt: Phaser.GameObjects.Text;
-    private relojTxt: Phaser.GameObjects.Text;
+    private VidasTxt: Phaser.GameObjects.BitmapText;
+    private PuntuacionTxt: Phaser.GameObjects.BitmapText;
+    private relojTxt: Phaser.GameObjects.BitmapText;
 
     private width: number;
     private height: number;
@@ -20,7 +20,7 @@ export default class HUD extends Phaser.Scene{
 
 
     private actualizaVidas(): void{
-        this.VidasTxt.text = Constante.HUD.VIDAS + ' : ' + this.registry.get(Constante.REGISTRO.VIDAS);
+        this.VidasTxt.text = Constante.HUD.VIDAS + this.registry.get(Constante.REGISTRO.VIDAS);
     }
 
     private actualizaPuntuacion(): void{
@@ -38,10 +38,11 @@ export default class HUD extends Phaser.Scene{
         nivel1.events.on(Constante.EVENTOS.PUNTUACION, this.actualizaPuntuacion, this);
         nivel1.events.on(Constante.EVENTOS.RELOJ, this.actualizaReloj, this);
 
-        this.VidasTxt = this.add.text(20, 20, Constante.HUD.VIDAS + ' 3', {fontSize:'32px', color:'#ffffff'});
+        // Ahora le doy su tamaño y su fuente Bitmap
+        this.VidasTxt = this.add.bitmapText(20, 20, Constante.FUENTES.BITMAP, Constante.HUD.VIDAS + this.registry.get(Constante.REGISTRO.VIDAS), 20);
 
-        this.PuntuacionTxt = this.add.text(this.cameras.main.width - 100, 20, '0', {fontSize:'32px', color:'#ffffff'});
+        this.PuntuacionTxt = this.add.bitmapText(this.width - 70, 20,  Constante.FUENTES.BITMAP, '000', 20);
 
-        this.relojTxt = this.add.text(this.width / 2, 20, '05.00', {fontSize:'20px', color:'#ffffff'});
+        this.relojTxt = this.add.bitmapText(this.width / 2, 20, Constante.FUENTES.BITMAP, '05.00', 20);
     }
 }

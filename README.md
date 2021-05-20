@@ -372,3 +372,18 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Creo dos variables para las plataformas en los dos ejes.
 		* Las defino en el create().
 		* Llamo a su update() en el update() del nivel.
+
+
+### 20/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Fundido de Escenas y Fuentes HUD.
+	* En Nivel 1 :
+		* Creo una nueva función para realizar un Fade-Out en la cámara y volver a la escena Menú.
+		* Modifico el collider con el objeto final para usar la función en vez del cambio de escenas.
+		* Quito el cambio de escenas en update() y añado un condicional para llamar a la función creada en case de que no queden vidas o tiempo.
+		* Quito la comprobación del registro de vidas en update().
+		* Quito los textos interactivos para aumentar o disminuir vidas y puntuaciones.
+	* En HUD :
+		* Cambio todas las variables de tipo Text a BitmapText.
+		* Al definir estos BitmapText cambio su constructor al correspondiente.
+		* Cambio el texto interactivo de vidas para una mejor visualización.
+	* Modifico el JSON de la fuente para que se muestren los caracteres correctos.
