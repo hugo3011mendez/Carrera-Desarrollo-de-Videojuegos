@@ -387,3 +387,19 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Al definir estos BitmapText cambio su constructor al correspondiente.
 		* Cambio el texto interactivo de vidas para una mejor visualización.
 	* Modifico el JSON de la fuente para que se muestren los caracteres correctos.
+
+
+### 24/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Música y Efectos de Sonido.
+	* Renombrada version26 a version27 para seguir avanzando en el proyecto.
+	* Descargados efectos de sonido y música de fondo desde la web Freesound para usar en el juego, añadidos a la carpeta assets.
+	* Actualizado archivo de constantes con los nuevos valores correspondientes.
+	* Cargados todos los efectos de sonido y bandas sonoras en la escena de Carga.
+	* En la escena del Menú :
+		* Declarada nueva variable para la banda sonora e inicializada en el recién creado preload().
+		* Modificada función cambiarEscena para hacer un Fade-Out de las cámaras al cambiar de escena.
+		* Paro todos los sonidos en la función init().
+	* En la escena del Nivel 1 :
+		* Declaro una nueva variable para el sonido.
+		* En la función preload() quito la carga del Logo de Phaser y cargo el sonido correspondiente aplicándole loop.
+		* Descomento la línea en la que paraba todos los sonidos en la función para volver al menú, y que se pare el sonido.
