@@ -403,3 +403,23 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Declaro una nueva variable para el sonido.
 		* En la función preload() quito la carga del Logo de Phaser y cargo el sonido correspondiente aplicándole loop.
 		* Descomento la línea en la que paraba todos los sonidos en la función para volver al menú, y que se pare el sonido.
+
+* Añadidos apuntes y resumen del siguiente vídeo, Clase 'Manejador de Niveles'.
+	* Renombrada version27 a version28 para seguir avanzando en el proyecto. 
+	* Descargados assets correspondientes.
+	* Modificado TiledMap para posicionar los recolectables.
+	* Añadidas constantes correspondientes a los objetos recolectables y efectos de sonido del jugador en el archivo de constantes.
+	* Añadidas cargas de objetos recolectables y efectos de sonido a la escena de carga.
+	* Creada nueva clase referente a los objetos recolectables :
+		* Extiende de Arcade.Group
+		* Tiene una propiedad de tipo Escena Nivel 1
+		* Tiene un constructor donde recibe sus parámetros necesarios, define sus variables, llama a super y crea los objetos recolectables con sus animaciones y físicas
+	* En Nivel 1 :
+		* Añado variables privadas para cada grupo de objetos recolectables.
+		* Defino dichas variables en create() con sus propiedades correspondientes.
+		* Dichas variables lanzan las acciones de la función recolecta() del jugador una vez el jugador y el objeto hagan overlap.
+	* En la clase del Jugador :
+		* Añado variables referentes a los efectos de sonido de caer, saltar y recolectar.
+		* Defino estos efectos de sonido en el constructor.
+		* Reproduzco los sonidos en su momento correspondiente, donde queda bien que suenen.
+		* Creo la función recolecta(), que realiza las acciones correspondientes cuando el jugador recolecta un objeto recolectable.
