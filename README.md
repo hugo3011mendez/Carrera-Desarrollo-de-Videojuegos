@@ -423,3 +423,19 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Defino estos efectos de sonido en el constructor.
 		* Reproduzco los sonidos en su momento correspondiente, donde queda bien que suenen.
 		* Creo la función recolecta(), que realiza las acciones correspondientes cuando el jugador recolecta un objeto recolectable.
+
+
+### 25/05/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Clase 'Manejador de Niveles'.
+	* Renombrada version28 a version29 para seguir avanzando en el proyecto. 
+	* Creada y usada correspondientemente variable referente al efecto de la colisión del enemigo con el jugador, en la clase del Jugador.
+	* Creada nueva clase para manejar los niveles :
+		* Hereda de scene.
+		* Añadidas variables referentes a todo lo necesario en un nivel : Vidas, puntuación, mapa, jugador, enemigos, efectos de sonido, plataformas móviles y recolectables.
+		* Pongo todas las variables en protected.
+	* Cambiadas importación y definición de la clase del Nivel 1 por la clase del manejador de niveles en todas las clases que corresponda.
+	* En la escena del Nivel 1 :
+		* Importo el manejador del nivel.
+		* Nivel 1 ahora extiende del manejador del nivel en vez de scene
+		* Elimino todo lo que he hecho en la clase
+		* Creo su constructor y su función create(), a la que les paso sus parámetros necesarios usando constantes
