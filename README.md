@@ -439,3 +439,11 @@ Aquí subiré el material de la carrera de Desarrollo de Videojuegos realizada p
 		* Nivel 1 ahora extiende del manejador del nivel en vez de scene
 		* Elimino todo lo que he hecho en la clase
 		* Creo su constructor y su función create(), a la que les paso sus parámetros necesarios usando constantes
+
+
+### 06/07/2021
+* Añadidos apuntes y resumen del siguiente vídeo, Clase 'Mejoras en el Audio'.
+	* Añadido campo para el audio en el archivo de configuración, en el que se especifica la propiedad disableWebAudio. 
+	* En el manejador de nivel, creo una función para crear la banda sonora, donde corto y pego lo que se hacía en el preload() y añado un fade in con tweens, especificando todas sus propiedades.
+	* Elimino el preload() porque no tenía instrucciones dentro.
+	* Por alguna razón, el Tweens no va.
